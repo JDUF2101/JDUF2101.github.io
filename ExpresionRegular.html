@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expresi&oacute;n regular</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body background="fondo1.jpg">
+    <div class="container py-4"> <!-- py = padding en el eje Y, osea arriba y abajo -->
+        <header class="pb-3 mb-4 border-bottom"> <!-- pb = padding bottom; mb = margin bottom -->
+            <span class="fs-3 text-light">Jonathan Urias - Matrícula: 190010 - Expresi&oacute;n regular</span> <!--fs= font size-->
+            </a>
+        </header>
+
+        <!--rounded se refiere a lo redondeado de los bordes-->
+        <div class="text-light rounded-top-3" style="background-color: rgb(97, 6, 6);"> 
+            <div class="container-fluid py-1">
+            <h5><strong>Texto a procesar:</strong></h5>
+            </div>
+        </div>
+
+        <div class="p-1 mb-2 bg-dark text-light rounded-bottom-2"> <!--bg-dark= background color -> dark -->
+            <div class="container-fluid">
+            <p id="texto">
+                El atardecer de Juárez se alza con sus colores rosáceos sobre nuestras cabezas. El cerro Bola se muestra fulguroso mientras nuestro Sol se esconde para dar paso a la noche. De un momento a otro la ciudad cambia de vestir y una escuela se prepara para recibir los pasos presurosos de una juventud que persigue la luna y sus estrellas. Es ahí, entre la calle Montes de Oca y la José Borunda que abre sus puertas la Escuela Secundaria Nocturna para Trabajadores, la única en la ciudad y una de las tres que hay en el estado de Chihuahua. La escuela es dirigida por el profesor Ángel Vadillo junto a una docena de profesores que reciben a estudiantes de 15 años en adelante buscando continuar con su formación académica ante las dificultades de un sistema educativo que no brinda las mismas oportunidades para las mayorías. Es desde la década de los cincuenta que esta escuela es pensada como una alternativa para trabajadores que buscaran un horario flexible y como una medida del sistema educativo para combatir el rezago y la deserción escolar. Así, la clase trabajadora ha encontrado en este centro de formación una oportunidad para crear nuevas relaciones de amistad con estudiantes y profesores, pero también como un centro para la organización y la convivencia. Actualmente, las instalaciones que se utilizan son las mismas que las de la Escuela Secundaria Federal número 9, esto en el turno de la mañana. A las tres de la tarde y hasta las siete los salones se preparan para recibir a los grupos de la Secundaria Nocturna, con edades que van desde los 12 años en adelante. Poco más de una veintena de jóvenes se reúnen por estas tardes-noches para continuar con su compromiso de aprender, sabiendo que no es una decisión fácil. Por eso la importancia de una escuela como esta radica en la posibilidad de un espacio para continuar estudiando, muchas veces   aun cuando se pensaba que ya no habría forma de lograrlo.
+
+                Extiendo mi reconocimiento al cuerpo docente que se enfrenta a la tarea pedagógica de mantener vivo un centro educativo que sigue brindando oportunidades. En definitiva este lugar no sería lo mismo sin quienes buscan sembrar e inspirar con la semilla del conocimiento. De tal manera, la “secu nocturna” se vuelve en una excepción a la regla en esta ciudad, pues lleva ya seis décadas formando generaciones que encuentran en la educación una herramienta para liberarnos, transformar esta realidad, como proponía el maestro de maestros, Paulo Freire.
+            </p>
+            <!-- texto extraído de ElDiario https://diario.mx/opinion/estudiar-con-la-luna-20230205-2021105.html?fbclid=IwAR2K44jPSpUqwvEBQ80jfK8G6qzwkPYVWgHV6McdEbPLb_DxE7PGEae-4-U -->
+            </div>
+        </div>
+
+        <div class="text-light rounded-top-3" style="background-color: rgb(37, 101, 221);width: 40%;"> 
+            <div class="container-fluid py-1">
+            <h5><strong>Expresión regular:</strong></h5>
+            </div>
+        </div>
+        <div class="fs-3 mb-1 rounded-bottom-1 p-2" style="width: 40%;background-color:blanchedalmond;">
+            <p style="color: rgb(150, 15, 228);">/[A+E+I+O+Ua+e+i+o+u]+[a+e+i+o+u]/</p>
+        </div>
+        <br>
+        <div class="text-light rounded-top-3" style="background-color: rgb(24, 228, 41);width: 40%;"> 
+            <div class="container-fluid py-1">
+            <h5><strong>Explicación:</strong></h5>
+            </div>
+        </div>
+        <div class="fs-6 text-light rounded-bottom-1 p-2 mb-4" style="background-color: rgb(72, 77, 226);width: 40%;font-style: italic;">
+            Todas las palabras que cuentan con dos vocales juntas (diptongo).
+        </div>
+
+        <div class="text-light rounded-top-3" style="background-color: rgb(234, 142, 247);"> 
+            <div class="container-fluid py-1">
+            <h5><strong>Resultados:</strong></h5>
+            </div>
+        </div>
+        <div class="p-3 text-light rounded-bottom-2" style="background-color: yellow;"> <!--bg-danger= fondo rojizo; my = margen en eje Y (arriba y abajo)-->
+            <div class="container-fluid">
+            <p id="salida" style="color: black;">
+                
+            </p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="ER.js"></script>
+</body>
+</html>
