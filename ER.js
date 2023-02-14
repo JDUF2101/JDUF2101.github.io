@@ -7,7 +7,7 @@ function funcionER(){
     /* La letra g al último de la expresión regular signigica "global" y es para que busque 
     coincidencias con la expresión regular en todo el texto, si no se usa solo buscará en el 
     primer renglón del texto. */
-    const expresion = /[A+E+I+O+Ua+e+i+o+u]+[a+e+i+o+u]/g;
+    const expresion = /\s\w+[^aeiou] /g;
     /* console.log() es para imprimir en consola. Usar F12 y seleccionar la pestaña "Console" 
     para ver la consola de JavaScript en Firefox y Chrome*/
     palabras = parrafo.match(expresion);
