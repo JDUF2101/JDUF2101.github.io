@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expresi&oacute;n regular</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body style="background-color: black;">
+    <div class="container py-4"> <!-- py = padding en el eje Y, osea arriba y abajo -->
+        <header class="pb-3 mb-4 border-bottom"> <!-- pb = padding bottom; mb = margin bottom -->
+            <span class="fs-3 text-light">Jonathan Urias - Matrícula: 190010 - Expresi&oacute;n regular</span> <!--fs= font size-->
+            </a>
+        </header>
+
+        <!--rounded se refiere a lo redondeado de los bordes-->
+        <div class="text-light rounded-top-3" style="background-color: rgb(97, 6, 6);width: 50%;"> 
+            <div class="container-fluid py-1">
+            <h5 style="text-align: center;"><strong>Inicio de sesi&oacute;n</strong></h5>
+            </div>
+        </div>
+
+        <div class="p-1 mb-2 bg-dark text-light rounded-bottom-2" style="width: 50%;"> <!--bg-dark= background color -> dark -->
+            <div class="container-fluid">
+            
+                <FORM name=form action="LogIn.html">
+
+                    <label for="EntradaNom" class="form-label rounded-3 py-1 mb-1">Usuario</label>
+                    <input type="text" class="form-control" name="user" placeholder="René Pérez"
+                    required
+                          minlength="1" maxlength="15">
+
+                    <label for="EntradaMat" class="form-label">Contrase&#241;a </label>
+                    <input type="password" class="form-control mb-2" name="password" placeholder="012345" 
+                     required
+                         minlength="6" maxlength="15">
+                    <INPUT class="btn btn-primary" onclick=iniciar_sesion() type=button value="Iniciar sesi&oacute;n">
+                    
+                    </FORM>
+
+            </div>
+        </div>
+        <script src="inicio.js"></script>
+</body>
+</html>
