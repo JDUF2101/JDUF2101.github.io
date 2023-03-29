@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script type="text/javascript" src="oculto.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocultar un mensaje</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body background="fondo1.jpg">
+    <div class="container py-4" style="text-align: center"> <!-- py = padding en el eje Y, osea arriba y abajo -->
+        <header class="pb-3 mb-4 border-bottom"> <!-- pb = padding bottom; mb = margin bottom -->
+            <span class="fs-3 text-light">Jonathan Urias - Matrícula: 190010</span> <!--fs= font size-->
+            </a>
+        </header>
+ <div class="card border-dark mb-3">
+            <div class="text border-0 rounded-top-3" style="background-color:yellow">
+                <div class="container-fluid py-2">
+                    <center>
+                        <h3><strong>Esteganografia</strong></h3>
+                    </center>
+                </div>
+            </div>
+
+            <div class="card-body text-bg-light">
+                <label for="texto">Cifrar texto:</label>
+                <br>
+                <textarea class="form-control" type="text" id="texto" name="texto" rows="3">Habia once lanzas acechandome</textarea>
+                <br>
+                <div class="card">
+                    <div class="card-footer">
+                    <h5>Texto plano:</h5>
+                    <p id="TextoPlano"></p>
+                    </div>
+                </div>
+
+                <br>
+                <div class="card">
+                    <div class="card-footer">
+                    <h5>Simbolos clave:</h5>
+                    <p id="Simbolos"></p>
+                    </div>
+                </div>
+
+                <br>
+                <div class="card">
+                    <div class="card-footer">
+                    <p id="mensaje"></p>
+                    </div>
+                </div>
+
+                <br>
+                <div class="card">
+                    <div class="card-footer">
+                    <h5>Mensaje oculto:</h5>
+                    <p id="mensajeOculto"></p>
+                    </div>
+                </div>
+				<br/>
+
+           
+
+                <button onclick="descifrar()" class="btn btn-danger">Descrifrar</button>
+            </div>
+        </div>
+</body>
+</html>
